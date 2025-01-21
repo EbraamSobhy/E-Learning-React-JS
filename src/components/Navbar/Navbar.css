@@ -1,0 +1,160 @@
+.logo {
+    height: 70px;
+    width: 100px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: white;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .show > .nav-link {
+    color: white;
+}
+
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: white;
+}
+
+/* Remove the link disappearance when clicked */
+.navbar-nav .nav-link.active,
+#collapsible-nav-dropdown {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: black; /* Set toggle button border color to
+    white */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Set toggle button background color to white */
+}
+
+    /* Adjust the z-index of the NavBar */
+    .NavBar {
+        position: relative; /* Ensure position is set to relative or absolute */
+        z-index: 998; /* Set a higher z-index value */
+    }
+
+.nav-link:hover {
+    border-bottom: white;
+    border-bottom-style: solid;
+}
+
+#register:hover {
+    border-bottom: green;
+    border-bottom-style: solid;
+    }
+
+    #register1:hover {
+        border-bottom: grey;
+        border-bottom-style: solid;
+        }
+
+/* Responsive styles for mobile phones */
+@media (max-width: 768px) {
+    .logo {
+        height: 100px;
+        width: 120px;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding: 15px 0;
+        height: 230px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        margin: 10px auto;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        margin: 4px;
+    }
+
+    #register, #register1 {
+        font-size: 14px;
+        display: block;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .NavBar {
+        z-index: 999;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.9rem;
+    }
+    .navbar .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.user-info {
+    display: inline-flex;
+    border-radius: 50%; /* Circular shape */
+    padding: 0.5rem; /* Padding to create space */
+    font-size: 1.5rem; /* Text size */
+    text-align: center;
+    width: 3rem; /* Adjust size */
+    height: 3rem; /* Adjust size */
+    line-height: 2rem; /* Center the text vertically */
+    color: white;
+}
+
+.user-info:hover {
+    background-color: #36454F;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .user-info {
+        font-size: 1rem; /* Adjust font size */
+        width: 1.5rem; /* Adjust size */
+        height: 1.5rem; /* Adjust size */
+        line-height: 1.5rem; /* Adjust line height */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-info {
+        font-size: 0.875rem; /* Smaller font size for smaller screens */
+        width: 1.25rem; /* Adjust size */
+        height: 1.25rem; /* Adjust size */
+        line-height: 1.25rem; /* Adjust line height */
+    }
+}

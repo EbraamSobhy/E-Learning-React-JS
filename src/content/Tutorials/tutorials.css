@@ -1,0 +1,100 @@
+/* General Page Styling */
+.tutorials {
+    background-color: #0f0f0f; /* Deep dark background for focus on content */
+    background-image: linear-gradient(180deg, #1a1a1a, #0f0f0f); /* Smooth gradient for elegance */
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Page Title Styling */
+.tutorials-title {
+    color: #00d4ff; /* Vibrant highlight color */
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+/* Category Titles */
+h2 {
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 6px solid #00d4ff; /* Eye-catching border */
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.05); /* Subtle background */
+    border-radius: 5px;
+}
+
+/* Highlight Titles */
+.highlight-title {
+    color: #FF9800; /* Distinctive color for highlights */
+    background-color: rgba(255, 152, 0, 0.1); /* Light background for distinction */
+    padding: 12px 15px;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Video Grid Styling */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic columns for responsiveness */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Video Styling */
+.video-grid iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Strong shadow for depth */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    background: #000; /* Placeholder for iframe */
+}
+
+.video-grid iframe:hover {
+    transform: scale(1.05); /* Smooth zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8); /* Enhanced depth on hover */
+    filter: brightness(1.2); /* Brighten video on hover */
+}
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 768px) {
+    .tutorials-title {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .video-grid iframe {
+        height: 180px;
+    }
+}
+
+/* Added Animation for Entry */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-grid iframe {
+    animation: fadeIn 0.5s ease-in-out;
+}

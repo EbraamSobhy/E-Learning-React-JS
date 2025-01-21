@@ -1,0 +1,38 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-top-style: solid;
+    border-color: white;
+}
+
+.name {
+    font-size: 27px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: white;
+    border-bottom-style: solid;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media-icons a {
+    color: white;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+    color: aqua;
+}
+
+.copyright {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
