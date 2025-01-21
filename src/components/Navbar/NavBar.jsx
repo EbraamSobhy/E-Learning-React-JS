@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './NavBar.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -15,6 +14,7 @@ import {
     signoutStart,
 } from "../../redux/user/userSlice";
 import axios from "axios";
+import './Navbar.css';
 
 function NavBar() {
     const navigate = useNavigate();
