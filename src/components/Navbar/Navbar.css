@@ -55,106 +55,84 @@
         border-bottom-style: solid;
         }
 
-/* Responsive styles for mobile phones */
+/* Responsive design for mobile devices */
 @media (max-width: 768px) {
     .logo {
-        height: 100px;
-        width: 120px;
-        justify-content: center;
+        height: 50px;
+        width: 70px;
     }
 
     .navbar-nav {
         text-align: center;
-        padding: 15px 0;
-        height: 230px;
     }
 
     .navbar-nav .nav-link {
         display: block;
         padding: 10px;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-    }
-
-    .navbar-brand {
-        font-size: 20px;
     }
 
     .navbar-toggler {
-        margin: 10px auto;
-        border: none;
+        margin: 10px;
     }
 
-    .navbar-toggler-icon {
-        display: inline-block;
-        margin: 4px;
-    }
-
-    #register, #register1 {
-        font-size: 14px;
-        display: block;
-        flex-direction: column;
-        justify-content: right;
-    }
-
-    .navbar-expand-lg .navbar-collapse {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .NavBar {
-        z-index: 999;
+    .navbar-brand {
+        font-size: 1.2em;
     }
 }
 
-@media (max-width: 768px) {
-    .navbar .nav-link {
-        font-size: 0.9rem;
+/* Responsive Design for All iPhone Devices */
+@media (max-width: 430px) { /* iPhone 14 Pro Max and smaller */
+    .logo {
+        max-width: 70px;
     }
-    .navbar .dropdown-menu {
-        width: 100%;
-        text-align: center;
+
+    .navbar-brand {
+        font-size: 1.3em;
     }
-}
 
-.user-info {
-    display: inline-flex;
-    border-radius: 50%; /* Circular shape */
-    padding: 0.5rem; /* Padding to create space */
-    font-size: 1.5rem; /* Text size */
-    text-align: center;
-    width: 3rem; /* Adjust size */
-    height: 3rem; /* Adjust size */
-    line-height: 2rem; /* Center the text vertically */
-    color: white;
-}
-
-.user-info:hover {
-    background-color: #36454F;
-    cursor: pointer;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .user-info {
-        font-size: 1rem; /* Adjust font size */
-        width: 1.5rem; /* Adjust size */
-        height: 1.5rem; /* Adjust size */
-        line-height: 1.5rem; /* Adjust line height */
+    .navbar-nav .nav-link {
+        padding: 9px;
     }
 }
 
-@media (max-width: 480px) {
-    .user-info {
-        font-size: 0.875rem; /* Smaller font size for smaller screens */
-        width: 1.25rem; /* Adjust size */
-        height: 1.25rem; /* Adjust size */
-        line-height: 1.25rem; /* Adjust line height */
+@media (max-width: 390px) { /* iPhone 13/14 and similar */
+    .logo {
+        max-width: 65px;
+    }
+
+    .navbar-brand {
+        font-size: 1.1em;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 375px) { /* iPhone SE 3rd Gen, iPhone 12 Mini */
+    .logo {
+        max-width: 60px;
+    }
+
+    .navbar-brand {
+        font-size: 1em;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 7px;
+    }
+}
+
+@media (max-width: 320px) { /* iPhone 5/SE 1st Gen */
+    .logo {
+        max-width: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 0.9em;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 6px;
     }
 }

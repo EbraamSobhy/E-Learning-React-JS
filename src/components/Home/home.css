@@ -113,3 +113,40 @@ p {
         font-size: 0.8rem;
     }
 }
+
+/* General Responsive Design for All Mobile Devices */
+@media screen and (max-width: 768px) {
+    .main {
+        height: 100vh;
+    }
+
+    .content {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    .courses {
+        font-size: 35px;
+    }
+}
+
+/* Specific Responsive Design for iPhones */
+@media screen and (max-width: 430px) {
+    .content {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+
+    .courses {
+        font-size: 30px;
+    }
+}
+
+
