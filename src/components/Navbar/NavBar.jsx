@@ -76,18 +76,18 @@ function NavBar() {
                     <Navbar.Collapse id="navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/tutorials" target="_blank">Tutorials</Nav.Link>
+                            <Nav.Link as={Link} to="/tutorials">Tutorials</Nav.Link>
                             <NavDropdown title="Courses" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item as={Link} to="/content/HTML" target="_blank">HTML</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/content/CSS" target="_blank">CSS</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/content/JavaScript" target="_blank">JavaScript</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/content/ReactJS" target="_blank">React.JS</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/content/NodeJS" target="_blank">Node.JS</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/content/MongoDB" target="_blank">MongoDB</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/content/ExpressJS" target="_blank">Express.JS</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/HTML">HTML</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/CSS">CSS</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/JavaScript">JavaScript</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/ReactJS">React.JS</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/NodeJS">Node.JS</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/MongoDB">MongoDB</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/content/ExpressJS">Express.JS</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link as="a" href="https://6741fe0ac174586eb62b5804--peaceful-lokum-559853.netlify.app/" target="_blank" rel="noopener noreferrer">Online IDE</Nav.Link>
-                            <Nav.Link as={Link} to="/TodoList" target="_blank">TodoList</Nav.Link>
+                            <Nav.Link as={Link} to="/TodoList">TodoList</Nav.Link>
                         </Nav>
                         <Nav className="ml-auto">
                             {user ? (
