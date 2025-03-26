@@ -86,8 +86,7 @@ function NavBar() {
                                 <NavDropdown.Item as={Link} to="/content/MongoDB">MongoDB</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/content/ExpressJS">Express.JS</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as="a" href="https://6741fe0ac174586eb62b5804--peaceful-lokum-559853.netlify.app/" target="_blank" rel="noopener noreferrer">Online IDE</Nav.Link>
-                            <Nav.Link as={Link} to="/TodoList">TodoList</Nav.Link>
+                            <Nav.Link href="https://67e366233ba9977f3aeac251--visionary-pasca-8cdd41.netlify.app/" target="_blank" rel="noopener noreferrer">My Workspace</Nav.Link>
                         </Nav>
                         <Nav className="ml-auto">
                             {user ? (

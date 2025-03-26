@@ -22,9 +22,9 @@ function Tutorials() {
         ],
         "Best IDE Software :": [
             'https://www.youtube.com/embed/naL0cZNQh1g?si=6fqp-yij_Wg9w2ij',
-            'https://www.youtube.com/embed/y7MOp51gWeI?si=dQ0tGWsI-0kjD8bh',
+            'https://www.youtube.com/embed/mM97V2FSzHg?si=3IvuUW0bOi2tKqfE',
             'https://www.youtube.com/embed/j6mLD6e75Go?si=Mj9bOyEXQyWPu15L',
-            'https://www.youtube.com/embed/3jNhg8hnTrY?si=6VTlmCz8nXYynDFl'
+            'https://www.youtube.com/embed/N3Ai-6d7vDs?si=0hn9ERk-vSFko0Wa'
         ],
         "MERN Stack :": [
             'https://www.youtube.com/embed/-42K44A1oMA?si=eNnP68MzSMbFmJ5z',
@@ -39,7 +39,7 @@ function Tutorials() {
             <h1 className="tutorials-title">Tutorials</h1>
             {Object.keys(videoCategories).map((category, categoryIndex) => (
                 <div key={categoryIndex}>
-                    <h2 className={category === "Front-End Development", "Back-End Development" , "Mobile App Development" ? "highlight-title" : ""}>{category}</h2>
+                    <h2 className={category === "Front-End Development", "Back-End Development" , "Best IDE Software", "MERN Stack" ? "highlight-title" : ""}>{category}</h2>
                     <div className="video-grid">
                         {videoCategories[category].map((src, index) => (
                             <iframe

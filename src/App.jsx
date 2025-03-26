@@ -12,7 +12,6 @@ import MongoDB from './content/MongoDB/MongoDB';
 import ExpressJS from './content/ExpressJS/Express';
 import SignUp from './registration/SignUp';
 import Login from './login/Login';
-import TodoList from './TodoList/Home';
 
 function Layout() {
   const location = useLocation();
@@ -44,7 +43,6 @@ function Layout() {
         <Route path="/content/ExpressJS" element={<ExpressJS />} />
         <Route path="/registration/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/TodoList" element={<TodoList />} />
         </Routes>
       {!isExcludedPage && <Footer />}
     </>
